@@ -1,0 +1,63 @@
+{
+  "extends": [
+    "standard",
+    "eslint:recommended",
+    "plugin:eslint-comments/recommended",
+    "plugin:eslint-plugin/recommended",
+    "plugin:jest/recommended",
+    "plugin:prettier/recommended",
+    "plugin:promise/recommended",
+    "plugin:react/recommended",
+    "plugin:security/recommended",
+    "prettier/react",
+    "prettier/standard"
+  ],
+  "parser": "@babel/eslint-parser",
+  "parserOptions": {
+    "babelOptions": {
+      "rootMode": "upward"
+    }
+  },
+  "plugins": [
+    "@babel",
+    "eslint-plugin",
+    "jest",
+    "json",
+    "prettier",
+    "promise",
+    "react",
+    "react-hooks",
+    "security",
+    "xss"
+  ],
+  "env": {
+    "es6": true,
+    "browser": true,
+    "jest": true,
+    "jest/globals": true
+  },
+  "rules": {
+    "@babel/new-cap": "error",
+    "@babel/no-invalid-this": "error",
+    "prettier/prettier": "off",
+    "promise/catch-or-return": ["error", { "allowFinally": true }],
+    "react-hooks/exhaustive-deps": "warn",
+    "react-hooks/rules-of-hooks": "error",
+    "react/display-name": "off",
+    "react/jsx-uses-react": "error",
+    "react/jsx-uses-vars": "error",
+    "react/prop-types": "off",
+    "security/detect-non-literal-regexp": "off",
+    "security/detect-object-injection": "off",
+    "xss/no-location-href-assign": "error",
+    "xss/no-mixed-html": "error"
+  },
+  "settings": {
+    "react": {
+      "createClass": "createReactClass",
+      "flowVersion": "0.53",
+      "pragma": "React",
+      "version": "16.4"
+    }
+  }
+}

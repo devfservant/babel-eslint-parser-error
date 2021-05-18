@@ -1,0 +1,13 @@
+.cache/
+.env
+.eslintcache
+.history
+.idea/
+.npm
+.vscode
+.vscode/
+*.coverage
+*.coveragexml
+/reports
+coverage
+node_modules/
