@@ -5,6 +5,7 @@ This repository aims to reproduce the error: "Parsing error: Cannot read propert
 ### Steps to reproduce
 
 *  Clone the project
+*  Install the dependencies
 *  Run the command: `npx eslint "packages/**" --debug`
 
 ### Debug logs
